@@ -1,0 +1,43 @@
+.preview {
+    flex: 1;
+    background-color: var(--grey);
+    padding: 68px 0 204px 0;
+
+    &__box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__card {
+        flex-basis: 350px;
+    }
+
+    .preview__content {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* 2 Main Blocks as Flex boxes*/
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin-bottom: 20px;
+
+        .preview__link {
+            white-space: nowrap;
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 24px;
+
+            color: var(--blue, #374FC7);
+        }
+    }
+
+    /* Header with Title, Total order and Link */
+    
+
+    
+}

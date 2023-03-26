@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./input.css">
+
+        <style>
+            .demo_box { display: flex; flex-direction: column; }
+            .demo_box > div { max-width: 320px; margin-bottom: 20px; }
+            .demo_box > div:last-child { margin-bottom: 0; }
+        </style>
+    </head>
+    <body>
+        <main class="page">
+            <div class="page__container">
+                <div class="demo_box">
+                    <div class="form-group">
+                        <label class="form-group__label" for="default-input">Label</label>
+                        <div class="form-group__input">
+                            <input type="text" class="form-group__field" id="default-input" placeholder="Placeholder" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-group__label" for="error-input">Error</label>
+                        <div class="form-group__input">
+                            <input type="text" class="form-group__field form-group__field_error" id="error-input" placeholder="Error" />
+                            <svg class="icon-svg form-group__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <use xlink:href="/assets/images/icons-sprite.svg#error"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-group__label" for="success-input">Success</label>
+                        <div class="form-group__input">
+                            <input type="text" class="form-group__field form-group__field_success" id="success-input" placeholder="Success" />
+                            <svg class="icon-svg form-group__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <use xlink:href="/assets/images/icons-sprite.svg#success"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-group__label" for="disabled-input">Disabled</label>
+                        <div class="form-group__input">
+                            <input type="text" class="form-group__field form-group__field_disabled" id="disabled-input" disabled />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

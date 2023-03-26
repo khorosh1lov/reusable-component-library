@@ -1,0 +1,26 @@
+/* Globals */
+@import 'globals/normalize';
+@import 'globals/fonts';
+@import 'globals/vars';
+@import 'globals/globals';
+@import 'globals/typography';
+@import 'globals/all-pages';
+@import 'globals/header';
+@import 'globals/footer';
+@import 'globals/compopent-page';
+
+/* Components */
+@import 'components/preview';
+@import 'components/card';
+@import 'components/histogram';
+@import 'components/accordion';
+@import 'components/avatar';
+@import 'components/button';
+@import 'components/calendar';
+@import 'components/checkbox';
+@import 'components/input';
+@import 'components/modal';
+@import 'components/radio';
+@import 'components/skeleton';
+@import 'components/tooltip';
+@import 'components/toggler';

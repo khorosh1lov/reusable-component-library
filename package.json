@@ -1,0 +1,41 @@
+{
+  "name": "tasks-htmlcss",
+  "version": "1.0.0",
+  "description": "Course Materials",
+  "scripts": {
+    "build": "postcss src/scss/main.scss -o dist/css/main.min.css",
+    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{html,css,scss}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "keywords": [],
+  "author": "Sergey Zelenov",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "chai": "^4.2.0",
+    "cross-env": "^7.0.2",
+    "cssnano": "^5.0.8",
+    "mocha": "^7.1.2",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.6",
+    "postcss-scss": "^4.0.1",
+    "precss": "^4.0.0"
+  },
+  "dependencies": {
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1"
+  }
+}

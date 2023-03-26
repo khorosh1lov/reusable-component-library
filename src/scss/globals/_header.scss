@@ -1,0 +1,38 @@
+.header {
+    padding: 25px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        &__logo {
+            display: inline-flex;
+            width: 110px;
+            height: 32px;
+
+            .logo-img {
+                width: 100%;
+                
+                fill: var(--black);
+                stroke: var(--grey-4);
+            }
+        }
+    }
+
+    &__title {
+        margin: 0;
+        text-align: center;
+    }
+
+    @media (min-width: 768px) {
+        &__inner {
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            text-align: left;
+        }
+    }
+}

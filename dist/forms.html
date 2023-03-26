@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Controls</title>
+
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <div class="page component-page">
+        <header class="header component-page__header">
+            <div class="container">
+                <a href="index.html" title="Home Page" class="header__logo">
+                    <img class="logo-img" src="images/logo.svg" alt="Logo">
+                </a>
+            </div>
+        </header>
+
+        <main class="component-page__preview">
+            <div class="container">
+                <div class="component-page__main">
+                    <aside class="component-page__menu" role="menu">
+                        <h4 class="component-page__menu-title">
+                            Components
+                        </h4>
+                        <a href="buttons.html" class="component-page__link" title="Buttons">Buttons</a>
+                        <a href="accordion.html" class="component-page__link" title="Accordion">Accordion</a>
+                        <a href="skeleton.html" class="component-page__link" title="Skeleton">Skeleton</a>
+                        <a href="modal.html" class="component-page__link" title="Modal">Modal</a>
+                        <a href="tooltip.html" class="component-page__link" title="Tooltip">Tooltip</a>
+                        <a href="avatar.html" class="component-page__link" title="Avatar">Avatar</a>
+                        <a href="calendar.html" class="component-page__link" title="Calendar">Calendar</a>
+                        <a href="histogram.html" class="component-page__link" title="Histogram">Histogram</a>
+                        <a href="#" class="component-page__link component-page__link_active" title="Forms & Controls">Forms & Controls</a>
+                    </aside>
+                    <article class="component-page__content">
+                        <h3 class="component-page__content-title">
+                            Forms & Controls
+                        </h3>
+                        <section class="component-page__content-presentation">
+                            <div style="margin: 10px auto;">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" />
+                                    <div class="checkbox__state">
+                                        <div class="checkbox__control">
+                                            <svg class="icon-svg checkbox__icon" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                                <use xlink:href="images/icons-sprite.svg#check"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="checkbox__label">
+                                            Default
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div style="margin: 10px auto;">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" checked />
+                                    <div class="checkbox__state">
+                                        <div class="checkbox__control">
+                                            <svg class="icon-svg checkbox__icon" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                                <use xlink:href="images/icons-sprite.svg#check"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="checkbox__label">
+                                            Checked
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div style="margin: 10px auto;">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" disabled />
+                                    <div class="checkbox__state">
+                                        <div class="checkbox__control">
+                                            <svg class="icon-svg checkbox__icon" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                                <use xlink:href="images/icons-sprite.svg#check"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="checkbox__label">
+                                            Disabled
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div style="margin: 10px auto;">
+                                <label class="radio">
+                                    <input type="radio" class="radio__input" name="demo-radio" />
+                                    <div class="radio__state">
+                                        <div class="radio__control"></div>
+                                        <span class="radio__label">
+                                            Default
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div style="margin: 10px auto;">
+                                <label class="radio">
+                                    <input type="radio" class="radio__input" name="demo-radio" checked />
+                                    <div class="radio__state">
+                                        <div class="radio__control"></div>
+                                        <span class="radio__label">
+                                            Selected
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div style="margin: 10px auto;">
+                                <label class="radio">
+                                    <input type="radio" class="radio__input" name="demo-radio" disabled />
+                                    <div class="radio__state">
+                                        <div class="radio__control"></div>
+                                        <span class="radio__label">
+                                            Disabled
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div style="margin: 10px auto;">
+                                <label class="toggler">
+                                    <input type="checkbox" class="toggler__input" />
+                                    <div class="toggler__state">
+                                        <span class="toggler__label">
+                                            Default
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div style="margin: 10px auto;">
+                                <label class="toggler">
+                                    <input type="checkbox" class="toggler__input" checked />
+                                    <div class="toggler__state">
+                                        <span class="toggler__label">
+                                            Checked
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div style="margin: 10px auto;">
+                                <label class="toggler">
+                                    <input type="checkbox" class="toggler__input" disabled />
+                                    <div class="toggler__state">
+                                        <span class="toggler__label">
+                                            Disabled
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-group__label" for="default-input">Label</label>
+                                <div class="form-group__input">
+                                    <input type="text" class="form-group__field" id="default-input" placeholder="Placeholder" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-group__label" for="error-input">Error</label>
+                                <div class="form-group__input">
+                                    <input type="text" class="form-group__field form-group__field_error" id="error-input" placeholder="Error" />
+                                    <svg class="icon-svg form-group__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                        <use xlink:href="images/icons-sprite.svg#error"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-group__label" for="success-input">Success</label>
+                                <div class="form-group__input">
+                                    <input type="text" class="form-group__field form-group__field_success" id="success-input" placeholder="Success" />
+                                    <svg class="icon-svg form-group__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                        <use xlink:href="images/icons-sprite.svg#success"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-group__label" for="disabled-input">Disabled</label>
+                                <div class="form-group__input">
+                                    <input type="text" class="form-group__field form-group__field_disabled" id="disabled-input" disabled />
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer component-page__footer">
+            <div class="container">
+                <h5 class="component-page__footer-title">
+                    Reusable component library
+                </h5>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
